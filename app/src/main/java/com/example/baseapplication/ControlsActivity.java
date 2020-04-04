@@ -57,4 +57,8 @@ public class ControlsActivity extends AppCompatActivity {
             }
         });
     }
+
+    public void myClick(View view){
+        Toast.makeText(ControlsActivity.this, "按钮2被选中", Toast.LENGTH_SHORT).show();
+    }
 }
