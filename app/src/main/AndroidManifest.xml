@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DateActivity"></activity>
+        <activity android:name=".MessageActivity"></activity>
+        <activity android:name=".DateActivity" />
         <activity
             android:name=".CallActivity"
             android:label="拨打电话" />
