@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.baseapplication">
 
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/icon"
@@ -9,9 +12,16 @@
         android:roundIcon="@mipmap/icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CallActivity" android:label="拨打电话" />
-        <activity android:name=".ControlsActivity" android:label="简单控件" />
-        <activity android:name=".MovingActivity" android:label="自定义view" />
+        <activity android:name=".DateActivity"></activity>
+        <activity
+            android:name=".CallActivity"
+            android:label="拨打电话" />
+        <activity
+            android:name=".ControlsActivity"
+            android:label="简单控件" />
+        <activity
+            android:name=".MovingActivity"
+            android:label="自定义view" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,6 +31,4 @@
         </activity>
     </application>
 
-    <uses-permission android:name="android.permission.CALL_PHONE"/>
-    <uses-permission android:name="android.permission.READ_CONTACTS"/>
 </manifest>
